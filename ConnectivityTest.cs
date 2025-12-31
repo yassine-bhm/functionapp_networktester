@@ -14,7 +14,7 @@ namespace FunctionFlex
         private static List<string> _outputBuffer = new();
         [Function("ConnectivityTest")]
         public async Task<HttpResponseData> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequestData req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequestData req,
             FunctionContext executionContext)
         {
             _outputBuffer.Clear();

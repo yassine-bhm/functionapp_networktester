@@ -3,7 +3,7 @@ obj/
 *.publishsettings
 *.trx
 .vs/
-.vscode/
+
 *.user
 *.conf
 appsettings*.json
