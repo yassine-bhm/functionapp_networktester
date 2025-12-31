@@ -101,23 +101,6 @@ dotnet publish -c Release -o ./publish
 
 ### 2. Create an Azure Function App (Flex Consumption Plan)
 
-```bash
-az functionapp create \
-  --resource-group <ResourceGroupName> \
-  --consumption-plan-location <Location> \
-  --runtime dotnet \
-  --runtime-version 8.0 \
-  --functions-version 4 \
-  --name <FunctionAppName> \
-  --storage-account <StorageAccountName> \
-  --os-type Windows
-```
-
-### 3. Deploy
-
-```bash
-func azure functionapp publish <FunctionAppName>
-```
 
 ## Environment Variables Configuration
 
